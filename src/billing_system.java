@@ -37,7 +37,7 @@ public class billing_system {
         		Connection conn1 = DriverManager.getConnection(url,user,password);
                 PreparedStatement stmt1 = conn1.prepareStatement("INSERT INTO test2 (Pid, Pname, Price) VALUES (?, ?, ?)");
                   
-        		System.out.println(" Enter the 6 digit product id : ");
+        		System.out.println("Enter the 6 digit product id : ");
         		stmt1.setInt(1, scnr1.nextInt());
                
                 Scanner scnr2 = new Scanner(System.in);
